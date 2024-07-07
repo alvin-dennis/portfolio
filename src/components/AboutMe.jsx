@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import profileImage from '../abtme.jpg';  // Import the image
+import profileImage from '../images/abtme.jpg';  // Import the image
 
 const AboutMeContainer = styled.section`
   padding: 4rem;
@@ -153,7 +153,7 @@ const AboutMe = () => {
           In addition to my technical skills, I am deeply committed to volunteering and giving back to the community. My friendly and caring nature allows me to connect with people easily, making collaboration and teamwork a rewarding experience. I am passionate about using my skills to make a positive impact and contribute meaningfully to any project I undertake.
         </Paragraph>
         <Button onClick={() => window.location.href = '#contact'}>Contact me</Button>
-        <a href={process.env.PUBLIC_URL + '/cv.pdf'} target="_blank" rel="noopener noreferrer">Download CV</a>
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
       </TextContainer>
     </AboutMeContainer>
   );

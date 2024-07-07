@@ -1,13 +1,11 @@
-// src/components/Skills.js
-
 import React from 'react';
 import styled from 'styled-components';
-
 // Import images for skills
 import uiDesignIcon from '../images/ui.png';
 import appDevelopmentIcon from '../images/app.png';
 import webDevelopmentIcon from '../images/web.png';
 import posterDesignIcon from '../images/pd.png';
+
 
 // Import images for tools & technologies
 import figmaLogo from '../images/figma.png';

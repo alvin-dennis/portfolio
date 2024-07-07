@@ -185,16 +185,6 @@ const CloseButton = styled.button`
   align-self: flex-end;
 `;
 
-const ReadMoreButton = styled.button`
-  background-color: #731027;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  align-self: flex-end;
-`;
-
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('mobileApp');
   const [selectedWork, setSelectedWork] = useState(null);
@@ -219,10 +209,6 @@ const Portfolio = () => {
 
   const handleImageClick = () => {
     setIsFullscreen(!isFullscreen);
-  };
-
-  const handleReadMoreClick = () => {
-    setReadMore(true);
   };
 
   return (
@@ -271,7 +257,6 @@ const Portfolio = () => {
               </>
             )}
             <CloseButton onClick={closePopup}>Close</CloseButton>
-            {!readMore && <ReadMoreButton onClick={handleReadMoreClick}>Read More</ReadMoreButton>}
           </PopupContent>
         </PopupOverlay>
       )}

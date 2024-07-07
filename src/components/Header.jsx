@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import profileImage from '../image.jpg';
+import profileImage from '../images/image.jpg';
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -99,13 +99,13 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftSide>
-        <MainHeading>HELLO I’M A COMPUTER SCIENCE ENGINEER</MainHeading>
+        <MainHeading>HELLO I'M</MainHeading>
         <SubHeading>SREELAKSHMI S</SubHeading>
         <Paragraph>
           I am a versatile technology professional specializing in app development, UI design, and web development. I create seamless user experiences across platforms, combining technical expertise with creative design. My passion for technology drives me to stay updated with industry trends and continually enhance my skills.
         </Paragraph>
         <Button onClick={() => window.location.href = '#about'}>About me</Button>
-        <a href={process.env.PUBLIC_URL + '/cv.pdf'} target="_blank" rel="noopener noreferrer">Download CV</a>
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
       </LeftSide>
       <RightSide>
         <CircularImage src={profileImage} alt="Profile" />
