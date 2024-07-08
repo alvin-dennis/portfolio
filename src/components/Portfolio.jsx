@@ -213,38 +213,39 @@ const Portfolio = () => {
 
   return (
     <PortfolioContainer id="portfolio">
-      <SectionTitle>PORTFOLIO</SectionTitle>
-      <Tabs>
-        <TabButton isActive={activeTab === 'mobileApp'} onClick={() => handleTabClick('mobileApp')}>Mobile App</TabButton>
+      <SectionTitle data-aos="fade-up" data-aos-duration="1800">PORTFOLIO</SectionTitle>
+      <Tabs data-aos="fade-up" data-aos-duration="1800">
+        <TabButton isActive={activeTab === 'mobileApp'} onClick={() => handleTabClick('mobileApp')} >Mobile App</TabButton>
         <TabButton isActive={activeTab === 'website'} onClick={() => handleTabClick('website')}>Website</TabButton>
         <TabButton isActive={activeTab === 'poster'} onClick={() => handleTabClick('poster')}>Poster</TabButton>
         <TabButton isActive={activeTab === 'other'} onClick={() => handleTabClick('other')}>Other</TabButton>
       </Tabs>
-      <WorksGrid>
+      <WorksGrid >
         {works[activeTab].map((work) => (
-          <WorkItem key={work.id} onClick={() => handleWorkClick(work)}>
+          <WorkItem key={work.id} onClick={() => handleWorkClick(work)} data-aos="fade-up" data-aos-duration="2200">
             <WorkTitle>{work.title}</WorkTitle>
           </WorkItem>
         ))}
-      </WorksGrid>
+      </WorksGrid >
       {selectedWork && (
-        <PopupOverlay isOpen={!!selectedWork}>
-          <PopupContent>
-            <PopupTitle>{selectedWork.title}</PopupTitle>
+        <PopupOverlay isOpen={!!selectedWork} data-aos-duration="1800">
+          <PopupContent data-aos="fade-up" data-aos-duration="1800">
+            <PopupTitle data-aos="fade-up" data-aos-duration="1800">{selectedWork.title}</PopupTitle>
             {selectedWork.imageUrl && !readMore && (
               <PopupImage
                 src={selectedWork.imageUrl}
                 alt={selectedWork.title}
                 onClick={handleImageClick}
                 style={{ cursor: isFullscreen ? 'zoom-out' : 'zoom-in' }}
+                data-aos="fade-up" data-aos-duration="1800"
               />
             )}
             {!selectedWork.imageUrl && !readMore && (
-              <PopupDescription>{selectedWork.description}</PopupDescription>
+              <PopupDescription data-aos="fade-up" data-aos-duration="1800">{selectedWork.description}</PopupDescription>
             )}
             {readMore && (
               <>
-                <PopupDescription>{selectedWork.detailedDescription}</PopupDescription>
+                <PopupDescription data-aos="fade-up" data-aos-duration="1800">{selectedWork.detailedDescription}</PopupDescription>
                 {selectedWork.images.map((image, index) => (
                   <PopupImage
                     key={index}
@@ -256,7 +257,7 @@ const Portfolio = () => {
                 ))}
               </>
             )}
-            <CloseButton onClick={closePopup}>Close</CloseButton>
+            <CloseButton onClick={closePopup} data-aos="fade-up" data-aos-duration="1800">Close</CloseButton>
           </PopupContent>
         </PopupOverlay>
       )}

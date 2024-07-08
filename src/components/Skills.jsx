@@ -111,10 +111,10 @@ const ToolLogo = styled.img`
 const Skills = () => {
   return (
     <SkillsContainer id="skills">
-      <SectionTitle>SKILLS</SectionTitle>
+      <SectionTitle data-aos="fade-up" data-aos-duration="1800">SKILLS</SectionTitle>
 
-      <SubHeading>What Can I Do</SubHeading>
-      <SkillsGrid>
+      <SubHeading data-aos="fade-up" data-aos-duration="1800">What Can I Do</SubHeading>
+      <SkillsGrid data-aos="fade-up" data-aos-duration="1800">
         <SkillBox color="#F2F2F2">
           <SkillImage src={uiDesignIcon} alt="UI Design" />
           <SkillTitle>UI Design</SkillTitle>
@@ -133,8 +133,8 @@ const Skills = () => {
         </SkillBox>
       </SkillsGrid>
 
-      <SubHeading>Tools & Technology</SubHeading>
-      <ToolLogos>
+      <SubHeading data-aos="fade-up" data-aos-duration="1800">Tools & Technology</SubHeading>
+      <ToolLogos data-aos="fade-up" data-aos-duration="1800">
         <ToolLogo src={figmaLogo} alt="Figma" />
         <ToolLogo src={flutterLogo} alt="Flutter" />
         <ToolLogo src={pythonLogo} alt="Python" />
@@ -143,6 +143,7 @@ const Skills = () => {
         <ToolLogo src={cssLogo} alt="CSS" />
         <ToolLogo src={jsLogo} alt="JavaScript" />
         <ToolLogo src={photoshopLogo} alt="Photoshop" />
+        {/* <img src="https://skillicons.dev/icons?i=figma,flutter,python,c,html,css,javascript,photoshop" /> */}
       </ToolLogos>
     </SkillsContainer>
   );

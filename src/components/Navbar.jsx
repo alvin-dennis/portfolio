@@ -2,6 +2,9 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
 
 const Nav = styled.nav`
   display: flex;
@@ -27,12 +30,13 @@ const NavLink = styled.a`
 `;
 
 const Navbar = () => {
+  AOS.init();
   return (
     <Nav>
-      <NavLink href="#about">About me</NavLink>
-      <NavLink href="#skills">Skills</NavLink>
-      <NavLink href="#portfolio">Portfolio</NavLink>
-      <NavLink href="#contact">Contact me</NavLink>
+      <NavLink href="#about" data-aos="fade-down" data-aos-duration="1800">About </NavLink>
+      <NavLink href="#skills" data-aos="fade-down" data-aos-duration="1800">Skills</NavLink>
+      <NavLink href="#portfolio" data-aos="fade-down" data-aos-duration="1800">Portfolio</NavLink>
+      <NavLink href="#contact" data-aos="fade-down" data-aos-duration="1800">Contact</NavLink>
     </Nav>
   );
 };

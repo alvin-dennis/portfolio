@@ -6,11 +6,11 @@ import Skills from './components/Skills';
 import Portfolio from './components/Portfolio'
 import ContactMe from './components/ContactMe';
 import { FadeLoader } from 'react-spinners';
+
 import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);

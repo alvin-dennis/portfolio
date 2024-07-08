@@ -98,16 +98,16 @@ const Paragraph = styled.p`
 const Header = () => {
   return (
     <HeaderContainer>
-      <LeftSide>
-        <MainHeading>HELLO I'M</MainHeading>
-        <SubHeading>SREELAKSHMI S</SubHeading>
-        <Paragraph>
+      <LeftSide >
+        <MainHeading data-aos="fade-up" data-aos-duration="1800">HELLO I'M</MainHeading>
+        <SubHeading data-aos="fade-up" data-aos-duration="2000"> SREELAKSHMI S</SubHeading>
+        <Paragraph data-aos="fade-up" data-aos-duration="2200">
           I am a versatile technology professional specializing in app development, UI design, and web development. I create seamless user experiences across platforms, combining technical expertise with creative design. My passion for technology drives me to stay updated with industry trends and continually enhance my skills.
         </Paragraph>
-        <Button onClick={() => window.location.href = '#about'}>About me</Button>
-        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+        <Button onClick={() => window.location.href = '#about'} data-aos="fade-up" data-aos-duration="2400">About me</Button>
+        <Button href="/cv.pdf" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="2500">Download CV</Button>
       </LeftSide>
-      <RightSide>
+      <RightSide data-aos="fade-up" data-aos-duration="2000">
         <CircularImage src={profileImage} alt="Profile" />
       </RightSide>
     </HeaderContainer>

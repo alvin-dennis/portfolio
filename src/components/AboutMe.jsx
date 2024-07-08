@@ -139,21 +139,20 @@ const AboutMe = () => {
   return (
     <AboutMeContainer id="about">
       <BackgroundShapes>
-        <SquareBox />
-        <RectangleBox />
+        <SquareBox data-aos="fade-up" data-aos-duration="1800"/>
+        <RectangleBox data-aos="fade-up" data-aos-duration="1800"/>
       </BackgroundShapes>
       <ImageContainer>
-        <RoundedRectangleImage src={profileImage} alt="Profile" />
+        <RoundedRectangleImage src={profileImage} data-aos="fade-up" data-aos-duration="1800" alt="Profile" />
       </ImageContainer>
       <TextContainer>
-        <Title>About Me</Title>
-        <Paragraph>
+        <Title data-aos="fade-up" data-aos-duration="1800">About Me</Title>
+        <Paragraph data-aos="fade-up" data-aos-duration="1800">
           I am a dedicated Frontend developer and UI designer with a strong passion for creating intuitive and seamless user experiences. I hold a BTech in Computer Science from St. Joseph's College of Engineering and Technology, Palai, affiliated with APJ Abdul Kalam Technological University. 
           Throughout my academic and professional journey, I have honed my skills in designing and developing applications that are not only functional but also aesthetically pleasing. My interest in programming drives me to continuously learn and adapt to new technologies, ensuring that my solutions are innovative and up-to-date.
           In addition to my technical skills, I am deeply committed to volunteering and giving back to the community. My friendly and caring nature allows me to connect with people easily, making collaboration and teamwork a rewarding experience. I am passionate about using my skills to make a positive impact and contribute meaningfully to any project I undertake.
         </Paragraph>
-        <Button onClick={() => window.location.href = '#contact'}>Contact me</Button>
-        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+        <Button onClick={() => window.location.href = '#contact'} data-aos="fade-up" data-aos-duration="1800">Contact me</Button>
       </TextContainer>
     </AboutMeContainer>
   );

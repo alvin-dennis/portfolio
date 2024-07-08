@@ -177,7 +177,7 @@ const ContactMe = () => {
 
   return (
     <ContactMeContainer id="contact">
-      <SectionTitle>Contact Me</SectionTitle>
+      <SectionTitle data-aos="fade-up" data-aos-duration="1800">Contact Me</SectionTitle>
       <ContactContent>
         <MapContainer>
           <MapFrame 
@@ -185,9 +185,10 @@ const ContactMe = () => {
             allowFullScreen="" 
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            data-aos="fade-up" data-aos-duration="1800"
           ></MapFrame>
-          <AddressContainer>
-            <AddressIcon><FaMapMarkerAlt /></AddressIcon>
+          <AddressContainer data-aos="fade-up" data-aos-duration="1800"> 
+            <AddressIcon ><FaMapMarkerAlt /></AddressIcon>
             <AddressText>
               3064 Schinner Village Suite 621 <br />
               South Raymond, Louisiana <br />
@@ -197,7 +198,7 @@ const ContactMe = () => {
         </MapContainer>
         <FormContainer>
           <form onSubmit={handleSubmit}>
-            <InputGroup>
+            <InputGroup data-aos="fade-up" data-aos-duration="1800">
               <InputField 
                 type="text" 
                 name="name" 
@@ -206,7 +207,7 @@ const ContactMe = () => {
                 placeholder="Name" 
               />
             </InputGroup>
-            <InputGroup>
+            <InputGroup data-aos="fade-up" data-aos-duration="1800">
               <InputField 
                 type="email" 
                 name="email" 
@@ -215,7 +216,7 @@ const ContactMe = () => {
                 placeholder="Email" 
               />
             </InputGroup>
-            <InputGroup>
+            <InputGroup data-aos="fade-up" data-aos-duration="1800">
               <TextArea 
                 name="message" 
                 value={formData.message} 
@@ -223,11 +224,11 @@ const ContactMe = () => {
                 placeholder="Message" 
               />
             </InputGroup>
-            <SubmitButton type="submit">Submit</SubmitButton>
+            <SubmitButton type="submit" data-aos="fade-up" data-aos-duration="1800">Submit</SubmitButton>
           </form>
         </FormContainer>
       </ContactContent>
-      <SocialIcons>
+      <SocialIcons data-aos="fade-up" data-aos-duration="1800">
         <IconLink href="https://www.linkedin.com/in/sreelakshmi01" target="_blank"><FaLinkedin /></IconLink>
         <IconLink href="https://wa.me/+918137866551" target="_blank"><FaWhatsapp /></IconLink>
         <IconLink href="https://www.instagram.com/sreelakshmi_s01/" target="_blank"><FaInstagram /></IconLink>
