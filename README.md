@@ -1,22 +1,31 @@
-# Sreelakshmi's Portfolio
+# Sreelakshmi S Portfolio
 
-This is Sreelakshmi's portfolio website built with React and styled components.
+This platform serves as a digital showcase of my professional journey, skills, projects, and achievements. Feel free to explore my portfolio and discover the projects I've worked on. From web development and design and beyond, each project represents a labor of love and a testament to my commitment to excellence.
+
+
+## Demo
+
+You can also check out the live demo of the portfolio website [here](hosted link).
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/sreelakshmig/portfolio.git`
-2. Navigate to the project directory: `cd portfolio`
-3. Install dependencies: `npm install`
+Clone the Repo
 
-## Usage
-
-To start the development server, run the following command:
-
-```
-npm start
+```bash
+git clone https://github.com/sreelakshmi-01/portfolio.git
 ```
 
-Open your browser and visit `http://localhost:3000` to view the portfolio.
+Installation of dependencies
+
+```bash
+npm i or npm install
+```
+
+Start Server
+
+```bash
+npm run dev
+```
 
 ## Features
 
@@ -28,10 +37,6 @@ Open your browser and visit `http://localhost:3000` to view the portfolio.
 
 - React
 - Styled Components
-
-## Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 
