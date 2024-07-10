@@ -171,7 +171,7 @@ const ContactMe = () => {
       });
     })
     .catch((err) => {
-      console.log('FAILED...', err);
+      console.log('FAILED. TRY AGAIN', err);
     });
   };
 
@@ -181,7 +181,7 @@ const ContactMe = () => {
       <ContactContent>
         <MapContainer>
           <MapFrame 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.4622776506403!2d76.72351987450567!3d9.72685197767631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07cc024cb7c83f%3A0xc8944aaebb3ba492!2sSt.%20Joseph&#39;s%20College%20of%20Engineering%20and%20Technology%2C%20Palai!5e0!3m2!1sen!2sin!4v1719372023699!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3938.278627853142!2d76.68169307502116!3d9.219356390849764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMTMnMDkuNyJOIDc2wrA0MScwMy40IkU!5e0!3m2!1sen!2sin!4v1720617956495!5m2!1sen!2sin" 
             allowFullScreen="" 
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -190,9 +190,10 @@ const ContactMe = () => {
           <AddressContainer data-aos="fade-up" data-aos-duration="1800"> 
             <AddressIcon ><FaMapMarkerAlt /></AddressIcon>
             <AddressText>
-              3064 Schinner Village Suite 621 <br />
-              South Raymond, Louisiana <br />
-              72052-9388
+              Kizhakke Mukadiyil <br />
+              Kadakkadu South, Pandalam P O <br />
+              Pathanamthitta, Kerala <br/>
+              Pincode 689501
             </AddressText>
           </AddressContainer>
         </MapContainer>
