@@ -1,5 +1,3 @@
-// src/components/ContactMe.js
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaMapMarkerAlt, FaLinkedin, FaWhatsapp, FaInstagram, FaGithub } from 'react-icons/fa';
@@ -157,10 +155,10 @@ const ContactMe = () => {
     e.preventDefault();
 
     emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      'service_ho99ach',
+      'template_8khutg4',
       formData,
-      'YOUR_USER_ID'
+      '-y0V74T5mSJU56Bz7'
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);

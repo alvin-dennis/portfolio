@@ -1,8 +1,6 @@
-// src/components/AboutMe.js
-
 import React from 'react';
 import styled from 'styled-components';
-import profileImage from '../images/abtme.jpg';  // Import the image
+import profileImage from '../images/abtme.jpg';  
 
 const AboutMeContainer = styled.section`
   padding: 4rem;

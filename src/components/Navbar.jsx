@@ -1,5 +1,3 @@
-// src/components/Navbar.js
-
 import React from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';

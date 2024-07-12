@@ -1,5 +1,3 @@
-// src/components/Header.js
-
 import React from 'react';
 import styled from 'styled-components';
 import profileImage from '../images/image.jpg';
